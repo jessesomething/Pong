@@ -194,6 +194,10 @@ public class Main {
 
         timer = new Timer(gameSpeed, gameUpdater);
         timer.start();    //Every time the timer ticks, the actionPerformed method of the ActionListener is called
+
+        // Couldn't figure out how to update the player and cpu score when the ball moved into scoring position
+        // Accumulating the Integer doesn't seem to reflect in the GameDisplay for some reason
+        // Not really what some of this code means (no context) looked for documentation too..
         if (playerWins) {
             playerScore = playerScore + 1;
         }
